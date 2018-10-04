@@ -497,7 +497,7 @@ header{
 .aboutus img {
 	padding:7px;
 	display:block;
-	border:1px solid #bab4bb;
+	/*border:1px solid #bab4bb;*/
 }
 .aboutus .heading p{
 	z-index:1;
