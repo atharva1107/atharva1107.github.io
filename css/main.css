@@ -27,9 +27,11 @@
 /* Video trial--------------------------------
 -------------------------------------*/
 
+
+
 .sectionvideo{
 	position: relative;
-	width: 100%;
+	width: 50%;
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -42,8 +44,27 @@
 	position: absolute;
 	top:0;
 	left:0;
-	width:100%;
+	width:50%;
 	
+}
+
+
+
+
+/*Animation trial_---------------------------------
+--------------------------------------------------*/
+
+#messenger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Courier', sans-serif;
+  font-size: 43px;
+  color:#fff;
+  white-space: nowrap;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
 }
 
 
@@ -115,7 +136,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 h1{
 	
-	text-align:right;
+	text-align:center;
 	font-family: 'Montserrat', sans-serif;
 	font-size:43px;
 	line-height:76px;
@@ -244,7 +265,7 @@ header{
 	position:absolute ;
 	left:0;
 	top:50%;
-	text-align:right;
+	text-align:center;
 	margin-top:-35px;
 	
 	padding:0 ;
@@ -864,6 +885,7 @@ header{
 	line-height:35px;
 }
 
+
 /* Preloader */
 #preloader {
 	position:fixed;
@@ -871,13 +893,13 @@ header{
 	left:0;
 	right:0;
 	bottom:0;
-	background-color:#fff; /* change if the mask should have another color then white */
+	background-color:#000000; /* change if the mask should have another color then white */
 	z-index:9999999999; /* makes sure it stays on top */
 }
 
 #status {
-	width:200px;
-	height:200px;
+	width:880px;
+	height:440px;
 	color:#fff;
 	position:absolute;
 	left:50%; /* centers the loading animation horizontally one the screen */
@@ -885,9 +907,10 @@ header{
 	background-image:url(../images/preloader.gif); /* path to your loading animation */
 	background-repeat:no-repeat;
 	background-position:center;
-	margin:-100px 0 0 -100px; /* is width and height divided by two */
+	margin:-300px 0 0 -450px; /* is width and height divided by two */
 }
 #status p{text-align:center;}
+
 
 
 
