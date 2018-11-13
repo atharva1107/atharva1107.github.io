@@ -50,7 +50,6 @@
 
 
 
-
 /*Animation trial_---------------------------------
 --------------------------------------------------*/
 
@@ -667,6 +666,21 @@ header{
 	font-size:18px;
 	font-style:italic;
 	font-weight:400;
+}
+
+.btn-default {
+	background: #777;
+	border: 0;
+	border-radius: 4px;
+	padding: 10px 20px;
+	color: #fff;
+	margin-top: 15px;
+	font-size: 15px;
+}
+
+.btn-default:hover, .btn-default:focus{
+	color: #fff;
+	background: #000;
 }
 
 /*----------------------------------------------------
