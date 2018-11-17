@@ -75,6 +75,7 @@
     <div class="rotateIn">
     
     <div id="messenger"></div>
+    <p id="typer"></p>
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd slides-container" style="height:10%"> 
@@ -135,7 +136,7 @@
   <div class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">
 
     <div class="wow slideOutRight" data-wow-duration="4s">
-      <img src="images/rocket2.png">   
+      <img src="images/rocket3.png">   
 </div>
 </div>
   <!--about us end--> 
@@ -180,7 +181,7 @@
  <div class="wow slideInRight" data-wow-duration="3s">
 
     <div class="wow slideOutLeft" data-wow-duration="5s">
-      <img src="images/rocket.png">   
+      <img src="images/rocket4.png">   
 </div>
 </div>
 
@@ -255,7 +256,7 @@
   <div class="wow slideInLeft" data-wow-duration="2s">
 
     <div class="wow slideOutRight" data-wow-duration="4s">
-      <img src="images/rocket2.png">   
+      <img src="images/rocket3.png">   
 </div>
 </div>
 
@@ -310,7 +311,7 @@
 <div class="wow slideInRight" data-wow-duration="3s">
 
     <div class="wow slideOutLeft" data-wow-duration="5s">
-      <img src="images/rocket.png">   
+      <img src="images/rocket4.png">   
 </div>
 </div>
 
@@ -437,15 +438,25 @@ $(document).ready( function() {
 <script src="js/custom.js"></script>
 
 
-<!--Google Analytics-->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122658944-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-122658944-1');
+<!--  Typed.js   -->
+<script src="js/jquery-3.3.1.js">
 </script>
+<script src="js/typed.js">
+</script>
+<script>
+$(function(){
+  $("#typer").typed({
+  
+  strings: ["First sentence.", "Second sentence."],
+  typeSpeed: 30
+
+  )};
+});
+</script>
+  
+
+
+
 
 
 </body>
