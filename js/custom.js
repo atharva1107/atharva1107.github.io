@@ -195,7 +195,8 @@ var Messenger = function(el){
     m.fadeBuffer = false;
     m.messages = [
       'Hello World.',
-      'I am',
+      'I am making some changes to the application',
+      'and will be back in a couple of months!',
       'Atharva Raibagi.'
     ];
     
