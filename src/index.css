@@ -9,8 +9,12 @@
 }
 
 @media (max-width: 768px) {
-  .nav-link {
+  .desktop-links {
     display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: block !important;
   }
 }
 
