@@ -4,7 +4,14 @@
   --text-secondary: #94a3b8;
   --accent-primary: #38bdf8;
   --accent-secondary: #818cf8;
+  --nav-bg-scrolled: rgba(15, 23, 42, 0.8);
   --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    display: none !important;
+  }
 }
 
 :root.light-mode {
@@ -13,6 +20,7 @@
   --text-secondary: #475569;
   --accent-primary: #0284c7;
   --accent-secondary: #6366f1;
+  --nav-bg-scrolled: rgba(248, 250, 252, 0.8);
 }
 
 * {

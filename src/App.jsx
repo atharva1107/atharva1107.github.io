@@ -1,3 +1,5 @@
+import Navbar from './components/Navbar';
+import Background from './components/Background';
 import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
@@ -9,13 +11,24 @@ import { experience, skills, education, certifications } from './data';
 function App() {
   return (
     <div className="app-container">
-      <ThemeToggle />
+      <Background />
+      <Navbar />
       <main>
-        <Hero />
-        <Experience data={experience} />
-        <Skills data={skills} />
-        <Education data={education} />
-        <Certifications data={certifications} />
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="experience">
+          <Experience data={experience} />
+        </section>
+        <section id="skills">
+          <Skills data={skills} />
+        </section>
+        <section id="education">
+          <Education data={education} />
+        </section>
+        <section id="certifications">
+          <Certifications data={certifications} />
+        </section>
 
         {/* Footer */}
 

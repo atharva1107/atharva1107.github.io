@@ -2,11 +2,10 @@ import { useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const ThemeToggle = () => {
+const ThemeToggle = ({ style }) => {
     const [isDark, setIsDark] = useState(true);
 
     useEffect(() => {
-        // Check system preference or saved preference
         const savedTheme = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -38,21 +37,17 @@ const ThemeToggle = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{
-                position: 'fixed',
-                top: '2rem',
-                right: '2rem',
-                width: '3rem',
-                height: '3rem',
+                width: '2.5rem',
+                height: '2.5rem',
                 borderRadius: '50%',
-                backgroundColor: 'var(--bg-color)',
-                border: '2px solid var(--accent-secondary)',
-                color: 'var(--accent-primary)',
+                backgroundColor: 'transparent',
+                border: '1px solid var(--text-secondary)',
+                color: 'var(--text-primary)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                zIndex: 100,
-                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                ...style
             }}
             aria-label="Toggle theme"
         >
@@ -61,7 +56,7 @@ const ThemeToggle = () => {
                 animate={{ rotate: isDark ? 0 : 180 }}
                 transition={{ duration: 0.3 }}
             >
-                {isDark ? <Sun size={24} /> : <Moon size={24} />}
+                {isDark ? <Sun size={20} /> : <Moon size={20} />}
             </motion.div>
         </motion.button>
     );
